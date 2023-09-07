@@ -12,6 +12,8 @@
             <ul aria-expanded="false">
                 <li><a href="/karyawan">Index</a></li>
                 <li><a href="/tambah-karyawan">Create</a></li>
+                <li><a href="/user-profile">User Profile</a></li>
+                <li><a href="/login">Login</a></li>
             </ul>
         </li>
         <li><a class="" href="javascript:void()" aria-expanded="false">
@@ -42,9 +44,9 @@
                 <span class="nav-text">Notification</span>
             </a>
         </li>
-        <li><a class=" " href="/login" aria-expanded="false">
+        <li><a class=" " href="" aria-expanded="false">
                 <i class="flaticon-022-copy"></i>
-                <span class="nav-text">Login</span>
+                <span class="nav-text">Pages</span>
             </a>
         </li>
     </ul>

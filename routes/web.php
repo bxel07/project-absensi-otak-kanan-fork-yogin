@@ -28,3 +28,7 @@ Route::get('/karyawan', function () {
 Route::get('/tambah-karyawan', function () {
     return view('backend.pages.employee.create');
 });
+
+Route::get('/user-profile', function () {
+    return view('backend.pages.login.user-profile');
+});

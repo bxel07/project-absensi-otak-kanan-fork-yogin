@@ -4,11 +4,11 @@
 @endsection
 @section('content')
     <div class="container-fluid">
-        <div class="row page-titles">
-            <ol class="breadcrumb">
-                <li class="breadcrumb-item active"><a href="javascript:void(0)">Form</a></li>
-                <li class="breadcrumb-item"><a href="javascript:void(0)">Pickers</a></li>
-            </ol>
+        <div class="alert alert-warning solid alert-end-icon alert-dismissible fade show">
+            <span><i class="mdi mdi-alert"></i></span>
+            <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="btn-close">
+            </button>
+            <strong>Warning!</strong> Something went wrong. Please check.
         </div>
         <div class="row">
             <div class="col-12">
@@ -27,7 +27,7 @@
                                 <label class="form-label">Auto btn-close Clock Picker</label>
                                 <div class="input-group clockpicker" data-placement="bottom" data-align="top"
                                     data-autobtn-close="true">
-                                    <input type="text" class="form-control" value="13:14">
+                                    <input class="form-control" id="timepicker" placeholder="Check time">
                                     <span class="input-group-text"><i class="far fa-clock"></i></span>
                                 </div>
                             </div>
@@ -46,8 +46,7 @@
                                         class="text-danger scale5 ms-2">*</span></label>
                                 <div class="input-group">
                                     <div class="input-group-text"><i class="far fa-clock"></i></div>
-                                    <input size="16" type="text" value="2012-06-15" readonly
-                                        class="form-control form_datetime solid">
+                                    <input type="text" class="form-control" placeholder="2017-06-04" id="mdate">
                                 </div>
                             </div>
                             <div class="col-xl-12 mb-4">
@@ -60,6 +59,25 @@
                                             class="form-check-input"> Active</label></span>
                                 <span><label class="radio-inline me-3"><input type="radio" name="optradio"
                                             class="form-check-input"> In Active</label></span>
+                            </div>
+                            <div class="col-xl-6  col-md-6 mb-4">
+                                <label class="form-label font-w600">Posted Date<span
+                                        class="text-danger scale5 ms-2">*</span></label>
+                                <div class="input-group">
+                                    <input class="form-control" type="file" id="formFile">
+                                </div>
+                            </div>
+                            <div class="col-xl-6  col-md-6 mb-4">
+                                <label class="form-label font-w600">Username<span
+                                        class="text-danger scale5 ms-2">*</span></label>
+                                <div class="input-group">
+                                    <span class="input-group-text">@</span>
+                                    <input type="text" class="form-control border-left-end" id="username"
+                                        placeholder="Username" required="">
+                                    <div class="invalid-feedback" style="width: 100%;">
+                                        Your username is required.
+                                    </div>
+                                </div>
                             </div>
                             <div class="card-footer text-end">
                                 <div>
