@@ -22,11 +22,11 @@ Route::get('/login', function () {
 });
 
 Route::get('/karyawan', function () {
-    return view('backend.pages.employee.index');
+    return view('backend.pages.template.index');
 });
 
 Route::get('/tambah-karyawan', function () {
-    return view('backend.pages.employee.create');
+    return view('backend.pages.template.create');
 });
 
 Route::get('/user-profile', function () {
