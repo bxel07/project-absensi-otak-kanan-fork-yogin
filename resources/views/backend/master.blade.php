@@ -9,7 +9,17 @@
     <link rel="shortcut icon" type="image/png" href="{{ asset('assets/image/logo.png') }}">
     <link href="{{ asset('assets/vendor/bootstrap-select/dist/css/bootstrap-select.min.css') }}" rel="stylesheet">
     <link href="{{ asset('assets/css/style.css') }}" rel="stylesheet">
-
+    <link href="{{ asset('assets/vendor/datatables/css/jquery.dataTables.min.css') }}" rel="stylesheet">
+    <link href="{{ asset('assets/vendor/bootstrap-daterangepicker/daterangepicker.css') }}" rel="stylesheet">
+    <link href="{{ asset('assets/vendor/clockpicker/css/bootstrap-clockpicker.min.css') }}" rel="stylesheet">
+    <link href="{{ asset('assets/vendor/jquery-asColorPicker/css/asColorPicker.min.css') }}" rel="stylesheet">
+    <link
+        href="{{ asset('assets/vendor/bootstrap-material-datetimepicker/css/bootstrap-material-datetimepicker.css') }}"
+        rel="stylesheet">
+    <link href="{{ asset('assets/vendor/bootstrap-datepicker-master/css/bootstrap-datepicker.min.css') }}"
+        rel="stylesheet">
+    <link rel="stylesheet" href="{{ asset('assets/vendor/pickadate/themes/default.css') }}">
+    <link rel="stylesheet" href="{{ asset('assets/vendor/pickadate/themes/default.date.css') }}">
 </head>
 
 <body>
@@ -38,6 +48,27 @@
         <script src="{{ asset('assets/js/dashboard/statistics-page.js') }}"></script>
         <script src="{{ asset('assets/js/custom.min.js') }}"></script>
         <script src="{{ asset('assets/js/dlabnav-init.js') }}"></script>
+        <script src="{{ asset('assets/vendor/datatables/js/jquery.dataTables.min.js') }}"></script>
+        <script src="{{ asset('assets/js/plugins-init/datatables.init.js') }}"></script>
+        <script src="{{ asset('assets/vendor/bootstrap-datepicker-master/js/bootstrap-datepicker.min.js') }}"></script>
+        <script src="{{ asset('assets/vendor/moment/moment.min.js') }}"></script>
+        <script src="{{ asset('assets/vendor/bootstrap-daterangepicker/daterangepicker.js') }}"></script>
+        <script src="{{ asset('assets/vendor/clockpicker/js/bootstrap-clockpicker.min.js') }}"></script>
+        <script src="{{ asset('assets/vendor/jquery-asColor/jquery-asColor.min.js') }}"></script>
+        <script src="{{ asset('assets/vendor/jquery-asGradient/jquery-asGradient.min.js') }}"></script>
+        <script src="{{ asset('assets/vendor/jquery-asColorPicker/js/jquery-asColorPicker.min.js') }}"></script>
+        <script src="{{ asset('assets/vendor/bootstrap-material-datetimepicker/js/bootstrap-material-datetimepicker.js') }}">
+        </script>
+        <script src="{{ asset('assets/vendor/bootstrap-datepicker-master/js/bootstrap-datepicker.min.js') }}"></script>
+        <script src="{{ asset('assets/vendor/pickadate/picker.js') }}"></script>
+        <script src="{{ asset('assets/vendor/pickadate/picker.time.js') }}"></script>
+        <script src="{{ asset('assets/vendor/pickadate/picker.date.js') }}"></script>
+        <script src="{{ asset('assets/js/plugins-init/bs-daterange-picker-init.js') }}"></script>
+        <script src="{{ asset('assets/js/plugins-init/clock-picker-init.js') }}"></script>
+        <script src="{{ asset('assets/js/plugins-init/jquery-asColorPicker.init.js') }}"></script>
+        <script src="{{ asset('assets/js/plugins-init/material-date-picker-init.js') }}"></script>
+        <script src="{{ asset('assets/js/plugins-init/pickadate-init.js') }}"></script>
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
         <script>
             $(document).ready(function() {
 
@@ -63,6 +94,15 @@
                     count(0, counter[j], j);
                 }
             });
+        </script>
+        <script>
+            $(".form_datetime").datepicker({
+                format: 'yyyy-mm-dd'
+            });
+            var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'))
+            var tooltipList = tooltipTriggerList.map(function(tooltipTriggerEl) {
+                return new bootstrap.Tooltip(tooltipTriggerEl)
+            })
         </script>
 
     </body>

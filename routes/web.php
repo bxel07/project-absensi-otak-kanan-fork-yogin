@@ -16,3 +16,15 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     return view('backend.pages.dashboard.index');
 });
+
+Route::get('/login', function () {
+    return view('backend.pages.login.login');
+});
+
+Route::get('/karyawan', function () {
+    return view('backend.pages.employee.index');
+});
+
+Route::get('/tambah-karyawan', function () {
+    return view('backend.pages.employee.create');
+});

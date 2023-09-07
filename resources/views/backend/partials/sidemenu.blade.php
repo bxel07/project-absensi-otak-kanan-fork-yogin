@@ -1,9 +1,18 @@
 <div class="dlabnav-scroll">
     <ul class="metismenu" id="menu">
-        <li><a class="" href="javascript:void()" aria-expanded="false">
+        <li><a class="" href="/" aria-expanded="false">
                 <i class="flaticon-025-dashboard"></i>
                 <span>Dashboard</span>
             </a>
+        </li>
+        <li><a class="has-arrow " href="javascript:void()" aria-expanded="false">
+                <i class="flaticon-050-info"></i>
+                <span class="nav-text">Employee</span>
+            </a>
+            <ul aria-expanded="false">
+                <li><a href="/karyawan">Index</a></li>
+                <li><a href="/tambah-karyawan">Create</a></li>
+            </ul>
         </li>
         <li><a class="" href="javascript:void()" aria-expanded="false">
                 <i class="flaticon-093-waving"></i>
@@ -12,11 +21,6 @@
             <ul aria-expanded="false">
                 <li><a href="job-list.html">Lists</a></li>
             </ul>
-        </li>
-        <li><a class="" href="javascript:void()" aria-expanded="false">
-                <i class="flaticon-050-info"></i>
-                <span class="nav-text">Employee</span>
-            </a>
         </li>
         <li><a class="" href="javascript:void()" aria-expanded="false">
                 <i class="flaticon-086-star"></i>
@@ -38,9 +42,9 @@
                 <span class="nav-text">Notification</span>
             </a>
         </li>
-        <li><a class="has-arrow " href="javascript:void()" aria-expanded="false">
+        <li><a class=" " href="/login" aria-expanded="false">
                 <i class="flaticon-022-copy"></i>
-                <span class="nav-text">Pages</span>
+                <span class="nav-text">Login</span>
             </a>
         </li>
     </ul>
